@@ -18,3 +18,13 @@ D:\repos\С#\OneProject\OneProject\obj\Debug\OneProject.csproj.GenerateResource.
 D:\repos\С#\OneProject\OneProject\obj\Debug\OneProject.csproj.CoreCompileInputs.cache
 D:\repos\С#\OneProject\OneProject\obj\Debug\OneProject.exe
 D:\repos\С#\OneProject\OneProject\obj\Debug\OneProject.pdb
+D:\repos\C#\OneProject\OneProject\obj\Debug\OneProject.csproj.AssemblyReference.cache
+D:\repos\C#\OneProject\OneProject\obj\Debug\OneProject.Form1.resources
+D:\repos\C#\OneProject\OneProject\obj\Debug\OneProject.Properties.Resources.resources
+D:\repos\C#\OneProject\OneProject\obj\Debug\OneProject.csproj.GenerateResource.cache
+D:\repos\C#\OneProject\OneProject\obj\Debug\OneProject.csproj.CoreCompileInputs.cache
+D:\repos\C#\OneProject\OneProject\obj\Debug\OneProject.exe
+D:\repos\C#\OneProject\OneProject\obj\Debug\OneProject.pdb
+D:\repos\C#\OneProject\OneProject\bin\Debug\OneProject.exe.config
+D:\repos\C#\OneProject\OneProject\bin\Debug\OneProject.exe
+D:\repos\C#\OneProject\OneProject\bin\Debug\OneProject.pdb

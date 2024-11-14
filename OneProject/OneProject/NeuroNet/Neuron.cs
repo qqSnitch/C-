@@ -38,13 +38,13 @@ namespace OneProject.NeuroNet
             switch (_type)
             {
                 case NeuronType.Hidden:
-                    _output=Tanh(sum);
+                    _output = Tanh(sum);
                     _derivative = Tanh_Derivativator(sum);
                     break;
                 case NeuronType.Output:
                     _output = Exp(sum);
                     break;
-                   
+
             }
         }
         public static double Tanh(double x)

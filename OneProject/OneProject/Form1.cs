@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OneProject.NeuroNet;
+//using OneProject.Neuronet;
 
 namespace OneProject
 {
@@ -15,7 +17,12 @@ namespace OneProject
     {
         private NeuroNet.NetWork net=new NeuroNet.NetWork();
         private double[] A = new double[15] { 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d };
-
+        public Form1()
+        {
+            InitializeComponent();
+            A = new double[15];
+            net = new NetWork();
+        }
         private void changeButton(Button b, int ind)
         {
             if (b.BackColor == Color.Black)
@@ -28,10 +35,6 @@ namespace OneProject
                 b.BackColor = Color.Black;
                 A[ind] = 0d;
             }
-        }
-        public Form1()
-        {
-            InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -132,7 +135,12 @@ namespace OneProject
         private void Raspoznat_Click(object sender, EventArgs e)
         {
             net.ForwardPass(net, A);
-            LableOtvet.Text=net.fact.ToList().
+            LabelOtvet.Text=net.fact.ToList().IndexOf(net.fact.Max()).ToString();
+        }
+
+        private void buttonTrain_Click(object sender, EventArgs e)
+        {
+            net.Train(net);
         }
     }
 }

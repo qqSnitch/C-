@@ -11,11 +11,19 @@ namespace OneProject.NeuroNet
         private OutputLayer output_layer = new OutputLayer(10, 35, NeuronType.Output, nameof(output_layer));
 
         public double[] fact = new double[10];
-
         private double e_error_avr;
         public double E_error_avr { get => e_error_avr;set=>e_error_avr = value; }
         public NetWork() { }
 
+        public void Train(NetWork net)
+        {
+            int epoches = 70;// count of epoches
+            net.input_layer = new InputLayer(NetworkMode.Train);//инициализация входного слоя
+            double tmpSumError;// tmp el sum errors
+            double[] errors;
+            double[] temp_gsums1;
+            double[] temp_gsums2;
+        }
         public void ForwardPass(NetWork net, double[] netInput)
         {
             net.hidden_layer1.Data = netInput;
